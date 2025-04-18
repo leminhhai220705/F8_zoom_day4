@@ -1,0 +1,164 @@
+body {
+  background: #000000;
+}
+
+.background-container {
+  height: 775px;
+  width: 1038px;
+  background: rgba(255, 179, 176, 0.629);
+  margin: 0 auto;
+  position: relative;
+}
+
+.triangle-clippath {
+  background: rgba(217, 164, 157, 0.77);
+  width: 1039px;
+  height: 266px;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.paper {
+  width: 653px;
+  height: 749px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  box-shadow: 30px 29px 0px -3px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 30px 29px 0px -3px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 30px 29px 0px -3px rgba(0, 0, 0, 0.19);
+}
+
+.initial {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  height: calc(749px - 677px);
+}
+
+.initial h1 {
+  font-size: 19px;
+  margin-top: 25px;
+}
+
+.initial p {
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+
+  width: 548px;
+  height: 677px;
+  margin: 0 auto;
+}
+
+.work-experience {
+  width: 540px;
+  height: 238px;
+  margin: 26px auto 0 auto;
+}
+
+.work-experience h2 {
+  font-size: 10.5px;
+}
+
+.bar {
+  width: 545px;
+  height: 2px;
+  background: #000000;
+  margin-left: -2px;
+  margin-top: 5px;
+}
+
+.workexp-content {
+  width: inherit;
+  height: 209px;
+  margin-top: 11px;
+  font-size: 10px;
+}
+
+.workexp-content .title-time {
+  display: flex;
+  font-weight: bold;
+}
+
+.workexp-content .title-time .time-workexp {
+  margin-left: auto;
+}
+
+.workexp-content .title-time .time-workexp .time-from::after {
+  content: " - ";
+}
+
+.workexp-content .list-expcontent {
+  list-style-type: disc;
+  margin-top: 12px;
+  text-align: justify;
+  margin-left: 10px;
+  padding: 3.3px;
+}
+
+.workexp-content .list-expcontent .item-expcontent {
+  line-height: 1.4;
+}
+
+.workexp-content .list-expcontent .item-expcontent::marker {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.content-section .work-experience:nth-child(2) {
+  height: 160px;
+  margin-top: -5px;
+}
+
+.content-section .work-experience:nth-child(2) .workexp-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  height: 160px;
+}
+
+.content-section .work-experience:nth-child(2) .workexp-content .title-time {
+  margin-top: 10px;
+}
+
+.content-section .work-experience:nth-child(3) {
+  margin-top: 0px;
+  height: 123px;
+}
+
+.content-section .work-experience:nth-child(3) .workexp-content {
+  height: 123px;
+}
+
+.content-section .work-experience:nth-child(4) {
+  margin-top: 0px;
+  height: 70px;
+}
+
+.content-section .work-experience:nth-child(4) .workexp-content {
+  height: 70px;
+}
+
+.education {
+  width: 540px;
+  margin: -45px auto 0 auto;
+  font-size: 10.5px;
+}
+
+.education p {
+  margin-top: 13px;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}

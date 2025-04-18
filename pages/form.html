@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+  </head>
+  <body>
+    <form class="form-container" action="" autocomplete="off">
+      <div class="avatar-container">
+        <label class="avatar-label" for="file-choosing">
+          <img class="avatar-default" src="../imgs/avatar_default.png" alt="avatar_default" />
+        </label>
+        <input class="file-choosing" type="file" name="" id="file-choosing" accept="image/*" />
+        <div class="notice">
+          <h2>Let's get your setup</h2>
+          <p>It should take a coupe of minutes to pair your image</p>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <h1 class="header">Register</h1>
+        <div style="margin-top: 15%" class="first-group">
+          <div class="item-group1">
+            <label for="name">Name</label>
+            <input spellcheck="false" type="text" name="name" id="name" />
+          </div>
+
+          <div class="item-group1">
+            <label for="email">Email</label>
+            <input spellcheck="false" type="email" name="email" id="email" />
+          </div>
+
+          <div class="item-group1">
+            <label for="tel">Phone</label>
+            <input spellcheck="false" type="text" name="tel" id="tel" />
+          </div>
+
+          <div class="item-group1">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+
+          <div class="item-group1">
+            <label for="password-confirmation">Confirm Password</label>
+            <input type="password" name="password-confirmation" id="password-confirmation" />
+          </div>
+        </div>
+
+        <div class="second-group">
+          <div class="item-group2">
+            <p>Gender</p>
+
+            <div class="male-female">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" />
+
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" />
+            </div>
+          </div>
+
+          <div class="address">
+            <label for="address">Address</label>
+            <select name="address" id="address">
+              <option value="">--Choose one--</option>
+              <option value="hanoi">Hanoi</option>
+              <option value="hochiminh">Ho Chi Minh</option>
+              <option value="danang">Da Nang</option>
+            </select>
+          </div>
+
+          <div class="email-subcribe">
+            <label for="newsletter">Subscribe to Newsletter</label>
+            <input type="checkbox" name="email-promotion" id="newsletter" />
+
+            <label for="promotional">Receive Promotional Emails</label>
+            <input type="checkbox" name="email-promotion" id="promotional" />
+
+            <label for="product">Get Product Updates</label>
+            <input type="checkbox" name="email-promotion" id="product" />
+          </div>
+
+          <div class="btn-side">
+            <button class="btn">Save</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

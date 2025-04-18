@@ -1,0 +1,27 @@
+body {
+  background: #000000;
+}
+
+.background {
+  margin: 100px auto;
+  background: #305cbbb9;
+  width: 1269px;
+  height: 572px;
+}
+
+.container {
+  background-color: #3f5cca;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  text-align: center;
+  padding: 0 10px;
+  line-height: 80px;
+  color: #f0f5ff;
+}
+
+.active {
+  background-color: #fff;
+}
